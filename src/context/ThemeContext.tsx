@@ -21,11 +21,11 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     const savedTheme = localStorage.getItem("vscode-theme") as Theme;
     return savedTheme || "dark";
   });
-
   const setTheme = (newTheme: Theme) => {
     setThemeState(newTheme);
     localStorage.setItem("vscode-theme", newTheme);
   };
+
   const toggleTheme = () => {
     const themes: Theme[] = ["light", "dark", "black", "jellyfish"];
     const currentIndex = themes.indexOf(theme);
