@@ -1,11 +1,203 @@
+/* VS Code Color Palettes */
+
+/* Light Theme (Default Light+) */
+:root[data-theme="light"] {
+  /* Editor Colors */
+  --editor-background: #ffffff;
+  --editor-foreground: #000000;
+  --editor-line-highlight: #f5f5f5;
+  --editor-selection: #add6ff;
+  --editor-cursor: #000000;
+
+  /* Sidebar Colors */
+  --sidebar-background: #f3f3f3;
+  --sidebar-foreground: #383a42;
+  --sidebar-border: #e5e5e5;
+
+  /* Activity Bar */
+  --activitybar-background: #2c2c2c;
+  --activitybar-foreground: #ffffff;
+  --activitybar-inactive-foreground: #8c8c8c;
+  --activitybar-border: #2c2c2c;
+
+  /* Status Bar */
+  --statusbar-background: #007acc;
+  --statusbar-foreground: #ffffff;
+  --statusbar-border: #007acc;
+
+  /* Tab Colors */
+  --tab-active-background: #ffffff;
+  --tab-active-foreground: #383a42;
+  --tab-inactive-background: #ececec;
+  --tab-inactive-foreground: #6c6c6c;
+  --tab-border: #e5e5e5;
+
+  /* Button Colors */
+  --button-background: #0e639c;
+  --button-foreground: #ffffff;
+  --button-hover-background: #1177bb;
+
+  /* Input Colors */
+  --input-background: #ffffff;
+  --input-foreground: #383a42;
+  --input-border: #cecece;
+  --input-focus-border: #007acc;
+
+  /* Panel Colors */
+  --panel-background: #f8f8f8;
+  --panel-border: #e5e5e5;
+
+  /* Menu Colors */
+  --menu-background: #f8f8f8;
+  --menu-foreground: #383a42;
+  --menu-selection-background: #e5e5e5;
+  --menu-border: #e5e5e5;
+
+  /* Syntax Highlighting */
+  --syntax-keyword: #0000ff;
+  --syntax-string: #008000;
+  --syntax-comment: #008000;
+  --syntax-number: #098658;
+  --syntax-function: #795e26;
+  --syntax-variable: #001080;
+  --syntax-type: #267f99;
+  --syntax-error: #e45454;
+}
+
+/* Dark Theme (Dark+) */
+:root[data-theme="dark"] {
+  /* Editor Colors */
+  --editor-background: #1e1e1e;
+  --editor-foreground: #d4d4d4;
+  --editor-line-highlight: #2a2d2e;
+  --editor-selection: #264f78;
+  --editor-cursor: #ffffff;
+
+  /* Sidebar Colors */
+  --sidebar-background: #252526;
+  --sidebar-foreground: #cccccc;
+  --sidebar-border: #2f3129;
+
+  /* Activity Bar */
+  --activitybar-background: #333333;
+  --activitybar-foreground: #ffffff;
+  --activitybar-inactive-foreground: #8c8c8c;
+  --activitybar-border: #333333;
+
+  /* Status Bar */
+  --statusbar-background: #007acc;
+  --statusbar-foreground: #ffffff;
+  --statusbar-border: #007acc;
+
+  /* Tab Colors */
+  --tab-active-background: #1e1e1e;
+  --tab-active-foreground: #ffffff;
+  --tab-inactive-background: #2d2d30;
+  --tab-inactive-foreground: #969696;
+  --tab-border: #2f3129;
+
+  /* Button Colors */
+  --button-background: #0e639c;
+  --button-foreground: #ffffff;
+  --button-hover-background: #1177bb;
+
+  /* Input Colors */
+  --input-background: #3c3c3c;
+  --input-foreground: #cccccc;
+  --input-border: #3c3c3c;
+  --input-focus-border: #007acc;
+
+  /* Panel Colors */
+  --panel-background: #1e1e1e;
+  --panel-border: #2f3129;
+
+  /* Menu Colors */
+  --menu-background: #383838;
+  --menu-foreground: #cccccc;
+  --menu-selection-background: #094771;
+  --menu-border: #454545;
+
+  /* Syntax Highlighting */
+  --syntax-keyword: #569cd6;
+  --syntax-string: #ce9178;
+  --syntax-comment: #6a9955;
+  --syntax-number: #b5cea8;
+  --syntax-function: #dcdcaa;
+  --syntax-variable: #9cdcfe;
+  --syntax-type: #4ec9b0;
+  --syntax-error: #f44747;
+}
+
+/* Black Theme (High Contrast Dark) */
+:root[data-theme="black"] {
+  /* Editor Colors */
+  --editor-background: #000000;
+  --editor-foreground: #ffffff;
+  --editor-line-highlight: #0f0f0f;
+  --editor-selection: #264f78;
+  --editor-cursor: #ffffff;
+
+  /* Sidebar Colors */
+  --sidebar-background: #000000;
+  --sidebar-foreground: #ffffff;
+  --sidebar-border: #6fc3df;
+
+  /* Activity Bar */
+  --activitybar-background: #000000;
+  --activitybar-foreground: #ffffff;
+  --activitybar-inactive-foreground: #ffffff;
+  --activitybar-border: #6fc3df;
+
+  /* Status Bar */
+  --statusbar-background: #000000;
+  --statusbar-foreground: #ffffff;
+  --statusbar-border: #6fc3df;
+
+  /* Tab Colors */
+  --tab-active-background: #000000;
+  --tab-active-foreground: #ffffff;
+  --tab-inactive-background: #000000;
+  --tab-inactive-foreground: #ffffff;
+  --tab-border: #6fc3df;
+
+  /* Button Colors */
+  --button-background: #0e639c;
+  --button-foreground: #ffffff;
+  --button-hover-background: #1177bb;
+
+  /* Input Colors */
+  --input-background: #000000;
+  --input-foreground: #ffffff;
+  --input-border: #6fc3df;
+  --input-focus-border: #ffffff;
+
+  /* Panel Colors */
+  --panel-background: #000000;
+  --panel-border: #6fc3df;
+
+  /* Menu Colors */
+  --menu-background: #000000;
+  --menu-foreground: #ffffff;
+  --menu-selection-background: #094771;
+  --menu-border: #6fc3df;
+
+  /* Syntax Highlighting */
+  --syntax-keyword: #569cd6;
+  --syntax-string: #ce9178;
+  --syntax-comment: #7ca668;
+  --syntax-number: #b5cea8;
+  --syntax-function: #dcdcaa;
+  --syntax-variable: #9cdcfe;
+  --syntax-type: #4ec9b0;
+  --syntax-error: #f44747;
+}
+
+/* Base Styles */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  font-size: 13px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,56 +205,91 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--editor-background);
+  color: var(--editor-foreground);
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+a {
+  font-weight: 500;
+  color: var(--syntax-keyword);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--button-hover-background);
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 4px 12px;
+  font-size: 13px;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-background);
+  color: var(--button-foreground);
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.2s;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+  background-color: var(--button-hover-background);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 1px solid var(--input-focus-border);
+}
+
+input {
+  background-color: var(--input-background);
+  color: var(--input-foreground);
+  border: 1px solid var(--input-border);
+  border-radius: 2px;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--input-focus-border);
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--editor-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sidebar-border);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tab-inactive-foreground);
+}
+
+/* Selection Styles */
+::selection {
+  background-color: var(--editor-selection);
+}
+
+::-moz-selection {
+  background-color: var(--editor-selection);
 }

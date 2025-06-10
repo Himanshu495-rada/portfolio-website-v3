@@ -1,0 +1,32 @@
+.activityBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 8px 0;
+  background-color: var(--activitybar-background);
+}
+
+.activityItem {
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--activitybar-inactive-foreground);
+  font-size: 16px;
+}
+
+.activityItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.active {
+  border-left: 2px solid var(--statusbar-background);
+  color: var(--activitybar-foreground);
+}
+
+.itemsGroup {
+  width: 100%;
+}

@@ -1,0 +1,76 @@
+.tabBar {
+  display: flex;
+  background-color: var(--tab-inactive-background);
+  border-bottom: 1px solid var(--tab-border);
+  min-height: 35px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  border-right: 1px solid var(--tab-border);
+  background-color: var(--tab-inactive-background);
+  color: var(--tab-inactive-foreground);
+  transition: background-color 0.2s;
+  min-width: 120px;
+  max-width: 200px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.tab:hover {
+  background-color: var(--editor-line-highlight);
+}
+
+.tab.active {
+  background-color: var(--tab-active-background);
+  color: var(--tab-active-foreground);
+}
+
+.tabName {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 8px;
+}
+
+.dirty {
+  color: var(--editor-foreground);
+  margin-right: 4px;
+  font-size: 16px;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: var(--tab-inactive-foreground);
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.closeButton:hover {
+  background-color: var(--button-hover-background);
+  color: var(--button-foreground);
+}
+
+.tab.active .closeButton {
+  color: var(--tab-active-foreground);
+}
+
+.tab.active .closeButton:hover {
+  background-color: var(--button-hover-background);
+  color: var(--button-foreground);
+}

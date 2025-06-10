@@ -1,0 +1,247 @@
+.gitContainer {
+  height: 100%;
+  background-color: var(--sidebar-background);
+  color: var(--sidebar-foreground);
+  border-right: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.gitHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--sidebar-foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--sidebar-border);
+}
+
+.gitHeader h3 {
+  margin: 0;
+}
+
+.refreshButton {
+  background: none;
+  border: none;
+  color: var(--sidebar-foreground);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.refreshButton:hover:not(:disabled) {
+  background-color: var(--menu-selection-background);
+}
+
+.refreshButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.repoSection {
+  padding: 12px;
+  border-bottom: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.repoInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.repoIcon {
+  color: var(--syntax-keyword);
+}
+
+.repoName {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--sidebar-foreground);
+}
+
+.openRepoButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: var(--button-background);
+  color: var(--button-foreground);
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: flex-start;
+}
+
+.openRepoButton:hover {
+  background-color: var(--button-hover-background);
+}
+
+.errorMessage {
+  padding: 8px 12px;
+  background-color: var(--panel-background);
+  border-left: 3px solid var(--syntax-error);
+  margin: 8px 12px;
+  border-radius: 0 3px 3px 0;
+}
+
+.errorMessage small {
+  color: var(--syntax-error);
+  font-size: 11px;
+}
+
+.commitsSection {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--sidebar-foreground);
+  border-bottom: 1px solid var(--sidebar-border);
+}
+
+.sectionIcon {
+  color: var(--syntax-function);
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  color: var(--tab-inactive-foreground);
+  font-size: 12px;
+  gap: 12px;
+}
+
+.loadingSpinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--sidebar-border);
+  border-top: 2px solid var(--button-background);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.commitsList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.commitItem {
+  padding: 12px;
+  margin: 4px 0;
+  background-color: var(--panel-background);
+  border: 1px solid var(--panel-border);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.commitItem:hover {
+  background-color: var(--menu-selection-background);
+}
+
+.commitHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.commitSha {
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 11px;
+  background-color: var(--input-background);
+  color: var(--syntax-function);
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid var(--input-border);
+}
+
+.commitDate {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  color: var(--tab-inactive-foreground);
+}
+
+.commitMessage {
+  font-size: 13px;
+  color: var(--sidebar-foreground);
+  margin-bottom: 6px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.commitAuthor {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--tab-inactive-foreground);
+}
+
+.gitActions {
+  padding: 12px;
+  border-top: 1px solid var(--sidebar-border);
+  display: flex;
+  gap: 8px;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: var(--input-background);
+  color: var(--input-foreground);
+  border: 1px solid var(--input-border);
+  border-radius: 3px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+  justify-content: center;
+}
+
+.actionButton:hover:not(:disabled) {
+  background-color: var(--button-hover-background);
+  border-color: var(--input-focus-border);
+}
+
+.actionButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

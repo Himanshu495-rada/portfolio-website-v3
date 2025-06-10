@@ -1,0 +1,28 @@
+.sidebarContainer {
+  grid-area: sidebar;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--sidebar-background);
+  border-right: 1px solid var(--panel-border);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .sidebarContainer {
+    position: fixed;
+    top: 0;
+    left: 48px;
+    bottom: 22px;
+    width: 180px;
+    z-index: 20;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebarContainer {
+    left: 36px;
+    width: 160px;
+  }
+}

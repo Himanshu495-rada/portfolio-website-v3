@@ -1,42 +1,291 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* VS Code Layout Styles */
+
+.vscode-layout {
+  display: grid;
+  grid-template-areas:
+    "activity sidebar main"
+    "status status status";
+  grid-template-columns: 48px 200px 1fr;
+  grid-template-rows: 1fr 22px;
+  height: 100dvh;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.vscode-layout.sidebar-hidden {
+  grid-template-areas:
+    "activity main main"
+    "status status status";
+  grid-template-columns: 48px 1fr;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Main Content */
+.main-content {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--editor-background);
+  overflow: auto;
+}
+
+/* Tab Bar */
+.tab-bar {
+  display: flex;
+  background-color: var(--tab-inactive-background);
+  border-bottom: 1px solid var(--tab-border);
+  min-height: 35px;
+}
+
+.tab {
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  border-right: 1px solid var(--tab-border);
+  background-color: var(--tab-inactive-background);
+  color: var(--tab-inactive-foreground);
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.tab:hover {
+  background-color: var(--editor-line-highlight);
+}
+
+.tab.active {
+  background-color: var(--tab-active-background);
+  color: var(--tab-active-foreground);
+}
+
+/* Editor */
+.editor {
+  flex: 1;
+  display: flex;
+  background-color: var(--editor-background);
+  overflow: hidden;
+}
+
+.line-numbers {
+  background-color: var(--editor-background);
+  padding: 8px 8px 8px 16px;
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 13px;
+  color: var(--tab-inactive-foreground);
+  user-select: none;
+  min-width: 50px;
+  text-align: right;
+}
+
+.line-numbers div {
+  line-height: 19px;
+}
+
+.code-content {
+  flex: 1;
+  padding: 8px 16px;
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 13px;
+  color: var(--editor-foreground);
+  line-height: 19px;
+  overflow: auto;
+}
+
+/* Syntax Highlighting */
+.keyword {
+  color: var(--syntax-keyword);
+  font-weight: 500;
+}
+
+.string {
+  color: var(--syntax-string);
+}
+
+.comment {
+  color: var(--syntax-comment);
+  font-style: italic;
+}
+
+.number {
+  color: var(--syntax-number);
+}
+
+.function {
+  color: var(--syntax-function);
+}
+
+.variable {
+  color: var(--syntax-variable);
+}
+
+.type {
+  color: var(--syntax-type);
+}
+
+.error {
+  color: var(--syntax-error);
+}
+
+/* Theme Panel */
+.theme-panel {
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--panel-background);
+  border: 1px solid var(--panel-border);
+  border-radius: 4px;
+}
+
+.theme-panel h3 {
+  margin: 0 0 16px 0;
+  color: var(--editor-foreground);
+  font-size: 16px;
+}
+
+.theme-panel p {
+  margin: 0 0 16px 0;
+  color: var(--editor-foreground);
+  font-size: 13px;
+}
+
+.theme-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.theme-buttons button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Theme Showcase Component */
+.theme-showcase {
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--panel-background);
+  border: 1px solid var(--panel-border);
+  border-radius: 4px;
+}
+
+.theme-showcase h2 {
+  margin: 0 0 20px 0;
+  color: var(--editor-foreground);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.theme-selector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.theme-selector button {
+  padding: 8px 16px;
+  font-size: 12px;
+  border-radius: 3px;
+  background-color: var(--input-background);
+  color: var(--input-foreground);
+  border: 1px solid var(--input-border);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.theme-selector button:hover {
+  background-color: var(--button-hover-background);
+  color: var(--button-foreground);
+}
+
+.theme-selector button.active {
+  background-color: var(--button-background);
+  color: var(--button-foreground);
+  border-color: var(--input-focus-border);
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.color-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background-color: var(--editor-background);
+  border: 1px solid var(--panel-border);
+  border-radius: 4px;
+}
+
+.color-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid var(--panel-border);
+  flex-shrink: 0;
+}
+
+.color-info {
+  flex: 1;
+}
+
+.color-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--editor-foreground);
+  margin-bottom: 2px;
+}
+
+.color-variable {
+  font-size: 11px;
+  color: var(--tab-inactive-foreground);
+  font-family: "Fira Code", "Consolas", monospace;
+}
+
+/* Mobile Overlay */
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  grid-area: main;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vscode-layout {
+    grid-template-columns: 40px 180px 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  .vscode-layout.sidebar-hidden {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .activity-item {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .file-item {
+    font-size: 12px;
+  }
+
+  .code-content {
+    font-size: 12px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  .vscode-layout {
+    grid-template-columns: 36px 160px 1fr;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .vscode-layout.sidebar-hidden {
+    grid-template-columns: 36px 1fr;
+  }
 }

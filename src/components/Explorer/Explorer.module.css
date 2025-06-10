@@ -1,0 +1,49 @@
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--sidebar-background);
+  border-right: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebarHeader {
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--sidebar-foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.fileTree {
+  flex: 1;
+  padding: 0 8px;
+}
+.fileItem {
+  padding: 2px 8px;
+  font-size: 13px;
+  color: var(--sidebar-foreground);
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 1px 0;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fileItem:hover {
+  background-color: var(--menu-selection-background);
+}
+
+.fileItem.nested {
+  padding-left: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: var(--sidebar-foreground);
+  text-align: center;
+}

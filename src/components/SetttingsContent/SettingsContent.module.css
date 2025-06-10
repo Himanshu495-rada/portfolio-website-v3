@@ -1,0 +1,45 @@
+.settingsContainer {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--editor-background);
+  color: var(--editor-foreground);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.settingsHeader {
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--panel-border);
+  padding-bottom: 16px;
+}
+
+.settingsHeader h1 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--editor-foreground);
+}
+
+.settingsHeader p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--tab-inactive-foreground);
+}
+
+.settingsSection {
+  margin-bottom: 32px;
+}
+
+.settingsSection h2 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--editor-foreground);
+  border-bottom: 1px solid var(--panel-border);
+  padding-bottom: 8px;
+}
+
+.sectionContent {
+  padding-left: 16px;
+}
