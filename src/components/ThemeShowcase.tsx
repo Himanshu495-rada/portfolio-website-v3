@@ -17,7 +17,7 @@ export const ThemeShowcase = () => {
 
   return (
     <div className="theme-showcase">
-      <h2>VS Code Color Palette</h2>
+      <h2>VS Code Color Palette</h2>{" "}
       <div className="theme-selector">
         <button
           className={theme === "light" ? "active" : ""}
@@ -37,8 +37,13 @@ export const ThemeShowcase = () => {
         >
           Black Theme
         </button>
+        <button
+          className={theme === "jellyfish" ? "active" : ""}
+          onClick={() => setTheme("jellyfish")}
+        >
+          JellyFish Theme
+        </button>
       </div>
-
       <div className="color-grid">
         {colorVariables.map((variable) => (
           <div key={variable.name} className="color-item">

@@ -4,6 +4,7 @@
   background-color: var(--editor-background);
   height: 100%;
   overflow: hidden;
+  width: 100%;
 }
 
 .contentArea {

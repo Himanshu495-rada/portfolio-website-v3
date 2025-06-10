@@ -5,11 +5,12 @@
   grid-template-areas:
     "activity sidebar main"
     "status status status";
-  grid-template-columns: 48px 200px 1fr;
+  grid-template-columns: 48px 240px 1fr;
   grid-template-rows: 1fr 22px;
   height: 100dvh;
   width: 100vw;
   overflow: hidden;
+  position: relative;
 }
 
 .vscode-layout.sidebar-hidden {
@@ -251,18 +252,18 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  grid-area: main;
+  z-index: 25;
+  backdrop-filter: blur(2px);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .vscode-layout {
-    grid-template-columns: 40px 180px 1fr;
+    grid-template-columns: 40px 200px 1fr !important;
   }
 
   .vscode-layout.sidebar-hidden {
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 40px 1fr !important;
   }
 
   .activity-item {
@@ -282,10 +283,10 @@
 
 @media (max-width: 480px) {
   .vscode-layout {
-    grid-template-columns: 36px 160px 1fr;
+    grid-template-columns: 36px 180px 1fr !important;
   }
 
   .vscode-layout.sidebar-hidden {
-    grid-template-columns: 36px 1fr;
+    grid-template-columns: 36px 1fr !important;
   }
 }

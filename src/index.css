@@ -192,6 +192,70 @@
   --syntax-error: #f44747;
 }
 
+/* JellyFish Theme (Inspired by oceanic bioluminescence) */
+:root[data-theme="jellyfish"] {
+  /* Editor Colors */
+  --editor-background: #0a0b1e;
+  --editor-foreground: #e8def8;
+  --editor-line-highlight: #1a1b3a;
+  --editor-selection: #6a4c93;
+  --editor-cursor: #ff6b9d;
+
+  /* Sidebar Colors */
+  --sidebar-background: #0f1133;
+  --sidebar-foreground: #c9b3f5;
+  --sidebar-border: #2d1b69;
+
+  /* Activity Bar */
+  --activitybar-background: #1a1b3a;
+  --activitybar-foreground: #ff6b9d;
+  --activitybar-inactive-foreground: #8b7cc8;
+  --activitybar-border: #2d1b69;
+
+  /* Status Bar */
+  --statusbar-background: #6a4c93;
+  --statusbar-foreground: #ffffff;
+  --statusbar-border: #8b7cc8;
+
+  /* Tab Colors */
+  --tab-active-background: #0a0b1e;
+  --tab-active-foreground: #e8def8;
+  --tab-inactive-background: #1a1b3a;
+  --tab-inactive-foreground: #a59aca;
+  --tab-border: #2d1b69;
+
+  /* Button Colors */
+  --button-background: #6a4c93;
+  --button-foreground: #ffffff;
+  --button-hover-background: #8b7cc8;
+
+  /* Input Colors */
+  --input-background: #1a1b3a;
+  --input-foreground: #e8def8;
+  --input-border: #2d1b69;
+  --input-focus-border: #ff6b9d;
+
+  /* Panel Colors */
+  --panel-background: #0f1133;
+  --panel-border: #2d1b69;
+
+  /* Menu Colors */
+  --menu-background: #1a1b3a;
+  --menu-foreground: #e8def8;
+  --menu-selection-background: #6a4c93;
+  --menu-border: #2d1b69;
+
+  /* Syntax Highlighting */
+  --syntax-keyword: #ff6b9d;
+  --syntax-string: #4ecdc4;
+  --syntax-comment: #8b7cc8;
+  --syntax-number: #ffeaa7;
+  --syntax-function: #74b9ff;
+  --syntax-variable: #fd79a8;
+  --syntax-type: #00b894;
+  --syntax-error: #ff7675;
+}
+
 /* Base Styles */
 :root {
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;

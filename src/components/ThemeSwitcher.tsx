@@ -7,11 +7,12 @@ function ThemeSwitcher() {
       <h3>Theme Switcher</h3>
       <p>
         Current theme: <strong>{theme}</strong>
-      </p>
+      </p>{" "}
       <div className="theme-buttons">
         <button onClick={() => setTheme("light")}>Light</button>
         <button onClick={() => setTheme("dark")}>Dark</button>
         <button onClick={() => setTheme("black")}>Black</button>
+        <button onClick={() => setTheme("jellyfish")}>JellyFish</button>
         <button onClick={toggleTheme}>Toggle Theme</button>
       </div>
     </div>

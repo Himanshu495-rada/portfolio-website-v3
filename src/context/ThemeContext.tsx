@@ -1,7 +1,7 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
 import type { ReactNode } from "react";
 
-type Theme = "light" | "dark" | "black";
+type Theme = "light" | "dark" | "black" | "jellyfish";
 
 interface ThemeContextType {
   theme: Theme; // The current theme state
@@ -26,9 +26,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     setThemeState(newTheme);
     localStorage.setItem("vscode-theme", newTheme);
   };
-
   const toggleTheme = () => {
-    const themes: Theme[] = ["light", "dark", "black"];
+    const themes: Theme[] = ["light", "dark", "black", "jellyfish"];
     const currentIndex = themes.indexOf(theme);
     const nextIndex = (currentIndex + 1) % themes.length;
     setTheme(themes[nextIndex]);

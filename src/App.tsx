@@ -14,6 +14,7 @@ function App() {
   >("files");
   const [sidebarVisible, setSidebarVisible] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [sidebarWidth, setSidebarWidth] = useState(240);
 
   // Check for mobile screen size
   useEffect(() => {
@@ -76,7 +77,17 @@ function App() {
   };
 
   return (
-    <div className={`vscode-layout ${!sidebarVisible ? "sidebar-hidden" : ""}`}>
+    <div
+      className={`vscode-layout ${!sidebarVisible ? "sidebar-hidden" : ""}`}
+      style={{
+        gridTemplateColumns:
+          sidebarVisible && !isMobile
+            ? `48px ${sidebarWidth}px 1fr`
+            : sidebarVisible
+            ? "48px 200px 1fr"
+            : "48px 1fr",
+      }}
+    >
       {/* Activity Bar */}
       <ActivityBar
         onPanelChange={handlePanelChange}
@@ -84,7 +95,14 @@ function App() {
       />
 
       {/* Sidebar */}
-      {sidebarVisible && <SidebarContainer activePanel={activeSidebarPanel} />}
+      {sidebarVisible && (
+        <SidebarContainer
+          activePanel={activeSidebarPanel}
+          width={sidebarWidth}
+          onWidthChange={setSidebarWidth}
+          isMobile={isMobile}
+        />
+      )}
 
       {/* Mobile Overlay */}
       {isMobile && sidebarVisible && (
