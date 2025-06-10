@@ -38,7 +38,7 @@ export const ThemeShowcase = () => {
           Black Theme
         </button>
         <button
-          className={theme === "jellyfish" ? "active" : ""}
+          className={theme == "jellyfish" ? "active" : ""}
           onClick={() => setTheme("jellyfish")}
         >
           JellyFish Theme
