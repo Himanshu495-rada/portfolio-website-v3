@@ -1,0 +1,52 @@
+.menuBar {
+  grid-area: menubar;
+  background-color: var(--menu-background);
+  color: var(--menu-foreground);
+  border-bottom: 1px solid var(--panel-border);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 11px;
+  height: 30px;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 8px;
+  height: 22px;
+  border-radius: 3px;
+  transition: background-color 0.15s ease;
+  user-select: none;
+}
+
+.menuItem:hover {
+  background-color: var(--menu-selection-background);
+  color: var(--menu-foreground);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .menuBar {
+    padding: 0 4px;
+    font-size: 10px;
+  }
+
+  .menuItem {
+    padding: 4px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menuBar {
+    height: 28px;
+  }
+
+  .menuItem {
+    padding: 3px 4px;
+    font-size: 9px;
+  }
+}

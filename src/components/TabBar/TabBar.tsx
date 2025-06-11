@@ -1,6 +1,8 @@
 import { useTab } from "../../context/TabContext";
 import { VscChromeClose } from "react-icons/vsc";
 import styles from "./TabBar.module.css";
+import { FaFileCode, FaMarkdown } from "react-icons/fa";
+import { LuSettings2 } from "react-icons/lu";
 
 export const TabBar = () => {
   const { tabs, activeTabId, setActiveTab, closeTab } = useTab();
@@ -28,6 +30,16 @@ export const TabBar = () => {
           }`}
           onClick={() => handleTabClick(tab.id)}
         >
+          {tab.fileType === "markdown" ? (
+            <FaMarkdown className={styles.icon} />
+          ) : tab.fileType === "settings" ? (
+            <LuSettings2 className={styles.icon} />
+          ) : (
+            <span className={styles.icon}>
+              <FaFileCode />
+            </span>
+          )}
+
           <span className={styles.tabName}>{tab.name}</span>
           {tab.isDirty && <span className={styles.dirty}>●</span>}
           <button

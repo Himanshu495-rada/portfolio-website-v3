@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer/Footer";
 import { MainContent } from "./components/MainContent/MainContent";
 import { useTab } from "./context/TabContext";
 import ProfileContent from "./components/ProfileContent/ProfileContent";
+import { MenuBar } from "./components/MenuBar/MenuBar";
 
 function App() {
   const { openTab } = useTab();
@@ -83,11 +84,13 @@ function App() {
         gridTemplateColumns:
           sidebarVisible && !isMobile
             ? `48px ${sidebarWidth}px 1fr`
-            : sidebarVisible
-            ? "48px 200px 1fr"
-            : "48px 1fr",
+            : !sidebarVisible
+            ? "48px 1fr"
+            : undefined, // Let CSS handle mobile responsive
       }}
     >
+      {/* Menu Bar */}
+      <MenuBar />
       {/* Activity Bar */}
       <ActivityBar
         onPanelChange={handlePanelChange}

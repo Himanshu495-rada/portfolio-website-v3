@@ -2,28 +2,8 @@ import { useState } from "react";
 import { FaFolder, FaMarkdown } from "react-icons/fa";
 import { VscChevronDown, VscChevronRight } from "react-icons/vsc";
 import { useTab } from "../../context/TabContext";
+import { MarkdownViewer } from "../MarkdownViewer/MarkdownViewer";
 import styles from "./Explorer.module.css";
-
-// Mock markdown content for demo
-const getMarkdownContent = (fileName: string) => {
-  return (
-    <div style={{ padding: "20px", fontFamily: "monospace" }}>
-      <h1>{fileName}</h1>
-      <p>This is a mock content for {fileName}</p>
-      <h2>Example Content</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <pre
-        style={{
-          background: "var(--panel-background)",
-          padding: "16px",
-          borderRadius: "4px",
-        }}
-      >
-        {`# ${fileName}\n\nThis is markdown content for ${fileName}\n\n- Item 1\n- Item 2\n- Item 3`}
-      </pre>
-    </div>
-  );
-};
 
 export const Explorer = () => {
   const [expandedFolders, setExpandedFolders] = useState<Set<string>>(
@@ -40,13 +20,12 @@ export const Explorer = () => {
     }
     setExpandedFolders(newExpanded);
   };
-
   const handleFileClick = (fileName: string, path: string) => {
     openTab({
       id: path,
       name: fileName,
       path: path,
-      content: getMarkdownContent(fileName),
+      content: <MarkdownViewer fileName={fileName} filePath={path} />,
       fileType: "markdown",
     });
   };

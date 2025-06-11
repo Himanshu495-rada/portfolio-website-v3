@@ -74,3 +74,9 @@
   background-color: var(--button-hover-background);
   color: var(--button-foreground);
 }
+
+.icon {
+  font-size: 16px;
+  margin-right: 8px;
+  color: var(--tab-active-foreground);
+}

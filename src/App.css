@@ -3,10 +3,11 @@
 .vscode-layout {
   display: grid;
   grid-template-areas:
+    "menubar menubar menubar"
     "activity sidebar main"
     "status status status";
   grid-template-columns: 48px 240px 1fr;
-  grid-template-rows: 1fr 22px;
+  grid-template-rows: 30px 1fr 22px;
   height: 100dvh;
   width: 100vw;
   overflow: hidden;
@@ -15,6 +16,7 @@
 
 .vscode-layout.sidebar-hidden {
   grid-template-areas:
+    "menubar menubar menubar"
     "activity main main"
     "status status status";
   grid-template-columns: 48px 1fr;
@@ -260,6 +262,7 @@
 @media (max-width: 768px) {
   .vscode-layout {
     grid-template-columns: 40px 200px 1fr !important;
+    grid-template-rows: 28px 1fr 22px;
   }
 
   .vscode-layout.sidebar-hidden {
@@ -284,6 +287,7 @@
 @media (max-width: 480px) {
   .vscode-layout {
     grid-template-columns: 36px 180px 1fr !important;
+    grid-template-rows: 28px 1fr 22px;
   }
 
   .vscode-layout.sidebar-hidden {
