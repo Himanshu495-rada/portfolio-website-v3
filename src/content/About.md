@@ -1,40 +1,17 @@
 # About Me
 
-## Introduction
+## Summary
 
-I'm a passionate **Full Stack Developer** with expertise in modern web technologies. I love creating innovative solutions and turning ideas into reality through code.
+Full Stack Developer with 3+ years of experience delivering scalable web applications using React.js, Node.js, Django, and PostgreSQL. Proficient in REST API development, state management, and component optimization. Delivered full-stack applications used across four Nordic countries, improving operational efficiency by 40%+. Strong foundation in software engineering, Agile development, cloud technologies (AWS), and data processing using Numpy and Pandas.
 
-## Background
+## Education
 
-- 🎓 **Education**: Computer Science Graduate
-- 💼 **Experience**: 3+ years in web development
-- 🌍 **Location**: Based in India
-- 🎯 **Focus**: Building scalable and user-friendly applications
+**Savitribai Phule Pune University**
+*Bachelor of Engineering*
+*2018/07 – 2022/09 | Pune, India*
+*CGPA: 8.79*
 
-## What I Do
+## Certificates
 
-I specialize in:
-
-- **Frontend Development**: React, TypeScript, Next.js
-- **Backend Development**: Node.js, Express, Python
-- **Database Management**: MongoDB, PostgreSQL, MySQL
-- **Cloud Services**: AWS, Azure, Google Cloud
-
-## Personal Interests
-
-When I'm not coding, you can find me:
-
-- 📚 Reading tech blogs and staying updated with latest trends
-- 🎮 Playing video games
-- 🌱 Learning new technologies
-- 🏃‍♂️ Running and staying fit
-
-## Philosophy
-
-> "Code is like humor. When you have to explain it, it's bad." - Cory House
-
-I believe in writing clean, maintainable code that speaks for itself. I'm always eager to learn new technologies and share knowledge with the developer community.
-
----
-
-_Feel free to reach out if you'd like to collaborate on exciting projects!_
+- **AWS Certified Cloud Practitioner** (Cred. ID - GYEP7C3CTBVE13C8)
+- **Snowpro Core Certified** (Cred. ID - S60632-2405310COF)

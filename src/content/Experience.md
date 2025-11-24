@@ -1,75 +1,19 @@
 # Professional Experience
 
-## 🚀 Senior Full Stack Developer
+## LTIMindtree
+**Full Stack Developer (QA Tools)**
+*2022/07 – Present | Pune, India*
 
-**TechCorp Solutions** | _January 2023 - Present_
+### Full-Stack Web Development
+- Designed and developed an internal **Test Data Management platform** using React.js, TypeScript, Express.js, Django, and PostgreSQL, improving data processing speeds by 40% and reducing end-to-end testing setup time by 15 hours per week.
+- Built responsive, pixel-perfect UI components from Figma designs, implementing state management with Redux and optimizing rendering performance for large datasets.
+- Engineered secure REST APIs with role-based authentication and authorization, enabling multi-user workflows across four Nordic countries.
+- Migrated legacy backend services to **Express.js and Django** (Python), enhancing scalability, maintainability, and cross-platform integration with PostgreSQL.
+- Integrated automation capabilities (Playwright, Robot Framework) directly into the platform, enabling one-click test data creation and health monitoring for mainframe, web, and Win32 applications.
+- Established CI/CD pipelines using Jenkins for automated builds, deployments, and application health checks, reducing manual release effort by 20+ hours weekly.
+- Conducted peer code reviews and implemented best practices for maintainability, performance, and security in both frontend and backend modules.
 
-### Key Responsibilities:
-
-- Lead development of enterprise web applications using **React** and **Node.js**
-- Architect scalable microservices with **TypeScript** and **Express.js**
-- Implement CI/CD pipelines using **GitHub Actions** and **Docker**
-- Mentor junior developers and conduct code reviews
-
-### Achievements:
-
-- 📈 Improved application performance by **40%** through optimization
-- 🔧 Reduced deployment time from 2 hours to **15 minutes**
-- 👥 Led a team of 5 developers on multiple projects
-- 🏆 Received "Developer of the Year" award in 2024
-
----
-
-## 💻 Full Stack Developer
-
-**InnovateWeb** | _June 2021 - December 2022_
-
-### Key Responsibilities:
-
-- Developed responsive web applications using **React** and **Vue.js**
-- Built RESTful APIs with **Python Flask** and **Django**
-- Managed databases with **PostgreSQL** and **MongoDB**
-- Collaborated with UX/UI designers for pixel-perfect implementations
-
-### Achievements:
-
-- 🎯 Delivered 15+ projects on time and within budget
-- 📱 Created mobile-first applications with **95%** performance scores
-- 🔐 Implemented secure authentication systems
-- 📊 Integrated analytics and monitoring tools
-
----
-
-## 🌟 Junior Web Developer
-
-**StartupHub** | _August 2020 - May 2021_
-
-### Key Responsibilities:
-
-- Assisted in frontend development using **HTML, CSS, JavaScript**
-- Learned and applied **React** framework
-- Participated in agile development processes
-- Contributed to open-source projects
-
-### Achievements:
-
-- 🚀 Rapidly learned modern web technologies
-- 🤝 Collaborated effectively in cross-functional teams
-- 📚 Completed multiple online certifications
-- 💡 Contributed innovative ideas to product development
-
----
-
-## 🛠️ Technical Skills Used:
-
-| Category     | Technologies                                    |
-| ------------ | ----------------------------------------------- |
-| **Frontend** | React, TypeScript, Next.js, Vue.js, HTML5, CSS3 |
-| **Backend**  | Node.js, Python, Express.js, Django, Flask      |
-| **Database** | PostgreSQL, MongoDB, MySQL, Redis               |
-| **DevOps**   | Docker, AWS, GitHub Actions, Jenkins            |
-| **Tools**    | Git, VS Code, Figma, Postman, Jira              |
-
----
-
-_"Every line of code is an opportunity to make something better."_
+### Process Improvement & AI Integration
+- Integrated **GitHub Copilot AI** into the test data request analysis workflow, automatically categorizing incoming requests and linking similar historical cases to JIRA tickets, reducing manual classification time by 50%.
+- Designed and implemented a data-driven request handling process leveraging CSV-based frameworks, increasing scalability and consistency in data provisioning.
+- Optimized internal tooling performance by refactoring API calls and query structures, resulting in faster load times and improved user experience for operational teams.

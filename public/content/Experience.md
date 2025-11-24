@@ -1,65 +1,19 @@
-# <span style="color:#2E86C1;">Professional Experience</span>
+# Professional Experience
 
-## <span style="color:#27AE60;">🏢 Quality Engineer</span>
+## LTIMindtree
+**Full Stack Developer (QA Tools)**
+*2022/07 – Present | Pune, India*
 
-**<span style="color:#D35400;">LTIMindtree</span>** | _<span style="color:#2980B9;">2022 - Present</span>_ | Pune, Maharashtra
+### Full-Stack Web Development
+- Designed and developed an internal **Test Data Management platform** using React.js, TypeScript, Express.js, Django, and PostgreSQL, improving data processing speeds by 40% and reducing end-to-end testing setup time by 15 hours per week.
+- Built responsive, pixel-perfect UI components from Figma designs, implementing state management with Redux and optimizing rendering performance for large datasets.
+- Engineered secure REST APIs with role-based authentication and authorization, enabling multi-user workflows across four Nordic countries.
+- Migrated legacy backend services to **Express.js and Django** (Python), enhancing scalability, maintainability, and cross-platform integration with PostgreSQL.
+- Integrated automation capabilities (Playwright, Robot Framework) directly into the platform, enabling one-click test data creation and health monitoring for mainframe, web, and Win32 applications.
+- Established CI/CD pipelines using Jenkins for automated builds, deployments, and application health checks, reducing manual release effort by 20+ hours weekly.
+- Conducted peer code reviews and implemented best practices for maintainability, performance, and security in both frontend and backend modules.
 
-**<span style="color:#8E44AD;">Technologies:</span>** React, Node.js, AWS, PostgreSQL, Playwright, RobotFramework, Selenium
-
-### <span style="color:#E74C3C;">🎯 Key Achievements:</span>
-
-- 🏗️ **Component Architecture**: Implemented Component-Based architecture to build <span style="color:#27AE60; font-weight:bold;">reusable and modular UI</span>
-- ⚡ **Automation Excellence**: Implemented automated testing pipeline reducing testing time by <span style="color:#E74C3C; font-weight:bold;">60%</span>
-- 🔍 **Code Quality**: Conducted comprehensive code reviews and performed <span style="color:#2980B9; font-weight:bold;">unit testing</span>
-- 🤖 **Test Automation**: Automated all test data creation software using <span style="color:#27AE60; font-weight:bold;">RobotFramework and Playwright</span>
-- 📋 **Framework Maintenance**: Updated and maintained Page Object Models by refining and updating locators
-- 🔧 **CI/CD Infrastructure**: Setup and maintained Jenkins Master-Slave architecture to <span style="color:#D35400; font-weight:bold;">distribute workloads</span>
-
----
-
-## <span style="color:#27AE60;">💻 Full Stack Developer</span>
-
-**<span style="color:#D35400;">Freelance</span>** | _<span style="color:#2980B9;">2021 - Present</span>_ | Pune, Maharashtra
-
-**<span style="color:#8E44AD;">Technologies:</span>** React, React Native, Express JS, Prisma, PostgreSQL, Next.js
-
-### <span style="color:#E74C3C;">🎯 Key Achievements:</span>
-
-- 🌐 **Responsive Design**: Built <span style="color:#27AE60; font-weight:bold;">responsive web applications</span> with modern UI/UX
-- 📱 **Mobile Development**: Created Android apps using <span style="color:#2980B9; font-weight:bold;">React Native and Expo</span>
-- 🔗 **API Integration**: Performed API testing and integration testing for <span style="color:#E74C3C; font-weight:bold;">payment systems</span>
-- ☁️ **Cloud Deployment**: Deployed applications on cloud platforms like <span style="color:#D35400; font-weight:bold;">Hostinger and IIS</span>
-- 🎨 **UI/UX Design**: Created user-friendly designs using <span style="color:#8E44AD; font-weight:bold;">Figma</span>
-
----
-
-## <span style="color:#27AE60;">🎓 Education</span>
-
-### <span style="color:#2980B9;">Bachelor of Engineering in Electronics and Telecommunication</span>
-
-**<span style="color:#D35400;">Savitribai Phule Pune University</span>** | _<span style="color:#2980B9;">2018 - 2022</span>_ | <span style="color:#27AE60; font-weight:bold;">GPA: 8.77/10.0</span>
-
-### <span style="color:#E74C3C;">📚 Relevant Coursework:</span>
-
-- 🧪 **Software Testing & Quality Assurance**
-- 🛠️ **Software Engineering**
-- 💾 **Database Systems**
-- 🌐 **Computer Networks**
-- 📊 **Data Structures & Algorithms**
-- 🤖 **Robotics**
-
----
-
----
-
-## <span style="color:#2980B9;">🏆 Certifications</span>
-
-- 🚀 **<span style="color:#FF6B35;">AWS Cloud Practitioner</span>** - Amazon Web Services
-- ❄️ **<span style="color:#329FD9;">Snowpro Core Certified</span>** - Snowflake Data Cloud
-
----
-
-<blockquote style="font-style: italic; color: #7F8C8D; border-left: 4px solid #2980B9; padding-left: 1em;">
-"Experience is the teacher of all things."  
-<br>— Julius Caesar
-</blockquote>
+### Process Improvement & AI Integration
+- Integrated **GitHub Copilot AI** into the test data request analysis workflow, automatically categorizing incoming requests and linking similar historical cases to JIRA tickets, reducing manual classification time by 50%.
+- Designed and implemented a data-driven request handling process leveraging CSV-based frameworks, increasing scalability and consistency in data provisioning.
+- Optimized internal tooling performance by refactoring API calls and query structures, resulting in faster load times and improved user experience for operational teams.

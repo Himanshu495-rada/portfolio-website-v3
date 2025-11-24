@@ -70,7 +70,7 @@ const ProfileContent = () => {
             <span>LinkedIn Profile</span>
           </a>
           <a
-            href="/Himanshu-Tekade-Resume.pdf"
+            href="/Himanshu-Yashwant-Tekade-Resume.pdf"
             className={styles.socialLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -84,31 +84,31 @@ const ProfileContent = () => {
       <div className={styles.aboutSection}>
         <h3>About Me</h3>
         <p>
-          I'm a passionate full-stack developer with expertise in modern web
-          technologies. I love creating interactive and user-friendly
-          applications that solve real-world problems.
+          Full Stack Developer with 3+ years of experience delivering scalable
+          web applications using React.js, Node.js, Django, and PostgreSQL.
         </p>
         <p>
-          My experience spans across frontend technologies like React,
-          TypeScript, and modern CSS, as well as backend development with
-          Node.js, databases, and cloud services.
+          Proficient in REST API development, state management, and component
+          optimization. I have a strong foundation in software engineering,
+          Agile development, cloud technologies (AWS), and data processing using
+          Numpy and Pandas.
         </p>
       </div>
 
       <div className={styles.skillsPreview}>
         <h3>Core Skills</h3>
         <div className={styles.skillTags}>
-          <span className={styles.skillTag}>React</span>
+          <span className={styles.skillTag}>React.js</span>
           <span className={styles.skillTag}>TypeScript</span>
-          <span className={styles.skillTag}>React Native</span>
           <span className={styles.skillTag}>Node.js</span>
-          <span className={styles.skillTag}>Python</span>
-          <span className={styles.skillTag}>SQL</span>
-          <span className={styles.skillTag}>MongoDB</span>
-          <span className={styles.skillTag}>Git</span>
+          <span className={styles.skillTag}>Django</span>
+          <span className={styles.skillTag}>PostgreSQL</span>
           <span className={styles.skillTag}>AWS</span>
+          <span className={styles.skillTag}>Next.js</span>
+          <span className={styles.skillTag}>Python</span>
+          <span className={styles.skillTag}>Redux</span>
           <span className={styles.skillTag}>Playwright</span>
-          <span className={styles.skillTag}>Robot Framework</span>
+          <span className={styles.skillTag}>Jenkins</span>
         </div>
         <p className={styles.exploreNote}>
           💡 Explore the <strong>Skills.md</strong> file in the Portfolio folder

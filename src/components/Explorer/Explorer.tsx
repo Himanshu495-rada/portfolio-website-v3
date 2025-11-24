@@ -135,6 +135,29 @@ export const Explorer = () => {
               <FaMarkdown fill="#56C1D8" />
               <p>SQL_Playground.md</p>
             </div>
+            <div
+              className={`${styles.fileItem} ${styles.nested}`}
+              onClick={() =>
+                handleFileClick("Music_Player.md", "Projects/Music_Player.md")
+              }
+              style={{ cursor: "pointer" }}
+            >
+              <FaMarkdown fill="#56C1D8" />
+              <p>Music_Player.md</p>
+            </div>
+            <div
+              className={`${styles.fileItem} ${styles.nested}`}
+              onClick={() =>
+                handleFileClick(
+                  "Hotel_Management.md",
+                  "Projects/Hotel_Management.md"
+                )
+              }
+              style={{ cursor: "pointer" }}
+            >
+              <FaMarkdown fill="#56C1D8" />
+              <p>Hotel_Management.md</p>
+            </div>
           </>
         )}
       </div>
